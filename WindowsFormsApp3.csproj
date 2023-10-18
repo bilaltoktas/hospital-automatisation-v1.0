@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7744CA9-ED90-4CEF-8274-CB2D40308C58}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp3</RootNamespace>
+    <AssemblyName>WindowsFormsApp3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dataDoktorIslem.cs" />
+    <Compile Include="doktoBilgiDüzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktoBilgiDüzenle.Designer.cs">
+      <DependentUpon>doktoBilgiDüzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doktordetayfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktordetayfrm.Designer.cs">
+      <DependentUpon>doktordetayfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="duyuruform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="duyuruform.Designer.cs">
+      <DependentUpon>duyuruform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmbilgidüzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbilgidüzenle.Designer.cs">
+      <DependentUpon>frmbilgidüzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBransAyar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBransAyar.Designer.cs">
+      <DependentUpon>frmBransAyar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoktorAyar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoktorAyar.Designer.cs">
+      <DependentUpon>frmDoktorAyar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoktorGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoktorGiris.Designer.cs">
+      <DependentUpon>frmDoktorGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHastaDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHastaDetay.Designer.cs">
+      <DependentUpon>frmHastaDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRandevu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRandevu.Designer.cs">
+      <DependentUpon>frmRandevu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="girisfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="girisfrm.Designer.cs">
+      <DependentUpon>girisfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hastaeklefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hastaeklefrm.Designer.cs">
+      <DependentUpon>hastaeklefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hastagiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hastagiris.Designer.cs">
+      <DependentUpon>hastagiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sekreterdetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sekreterdetay.Designer.cs">
+      <DependentUpon>sekreterdetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sekretergiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sekretergiris.Designer.cs">
+      <DependentUpon>sekretergiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="veriIslem.cs" />
+    <EmbeddedResource Include="doktoBilgiDüzenle.resx">
+      <DependentUpon>doktoBilgiDüzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doktordetayfrm.resx">
+      <DependentUpon>doktordetayfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="duyuruform.resx">
+      <DependentUpon>duyuruform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbilgidüzenle.resx">
+      <DependentUpon>frmbilgidüzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBransAyar.resx">
+      <DependentUpon>frmBransAyar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoktorAyar.resx">
+      <DependentUpon>frmDoktorAyar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoktorGiris.resx">
+      <DependentUpon>frmDoktorGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHastaDetay.resx">
+      <DependentUpon>frmHastaDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRandevu.resx">
+      <DependentUpon>frmRandevu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="girisfrm.resx">
+      <DependentUpon>girisfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hastaeklefrm.resx">
+      <DependentUpon>hastaeklefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hastagiris.resx">
+      <DependentUpon>hastagiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="sekreterdetay.resx">
+      <DependentUpon>sekreterdetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sekretergiris.resx">
+      <DependentUpon>sekretergiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
